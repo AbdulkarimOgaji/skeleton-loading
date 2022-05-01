@@ -18,24 +18,25 @@ export const HomeSkeleton = () => {
           <ul>
             <li>
               <a href="/">
-                <div></div>
+                <div className={styles.skeleton}></div>
               </a>
             </li>
             <li>
               <a href="/">
-                <div></div>
+                <div className={styles.skeleton}></div>
               </a>
             </li>
             <li>
               <a href="/">
-                <div></div>
+                <div className={styles.skeleton}></div>
               </a>
             </li>
             <li>
               <a href="/">
-                <div></div>
+                <div className={styles.skeleton}></div>
               </a>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -52,6 +53,11 @@ export const HomeSkeleton = () => {
             <div className={styles.pill}>Algorithms</div> */}
         </div>
         <div className={styles.items}>
+          <SingleVideo />
+          <SingleVideo />
+          <SingleVideo />
+          <SingleVideo />
+          <SingleVideo />
           <SingleVideo />
           <SingleVideo />
           <SingleVideo />
