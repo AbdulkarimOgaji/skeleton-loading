@@ -1,4 +1,4 @@
-import { SingleVideo } from "./SingleVideo";
+import { SingleVideoSkeleton } from "./SingleVideoSkeleton";
 import styles from "../../styles/skeleton.module.css";
 
 export const HomeSkeleton = () => {
@@ -11,58 +11,51 @@ export const HomeSkeleton = () => {
         </div>
         <div className={styles.searchBar}>
           <form>
-            <input type="text" className={styles.search} />
+            <input type="text" className={styles.search} /><i className={`bi bi-search ${styles.searchIcon}`}></i>
           </form>
         </div>
         <div className={styles.rightMenu}>
-          <ul>
+        <ul>
             <li>
               <a href="/">
-                <div className={styles.skeleton}></div>
+                <i className="bi bi-camera-video" ></i>
               </a>
             </li>
             <li>
               <a href="/">
-                <div className={styles.skeleton}></div>
+              <i className="bi bi-list" ></i>
+                
               </a>
             </li>
             <li>
               <a href="/">
-                <div className={styles.skeleton}></div>
+              <i className="bi bi-bell" ></i>
               </a>
             </li>
             <li>
               <a href="/">
-                <div className={styles.skeleton}></div>
+              <i className="bi bi-person-circle" ></i>
               </a>
             </li>
-            
           </ul>
         </div>
       </div>
       <div className={styles.sidebar}></div>
       <div className={styles.content}>
         <div className={styles.filters}>
-            {/* <div className={styles.pill}>Home</div>
-            <div className={styles.pill}>Magnus Carlsen</div>
-            <div className={styles.pill}>Javascript</div>
-            <div className={styles.pill}>Indoor games</div>
-            <div className={styles.pill}>Go</div>
-            <div className={styles.pill}>Lectures</div>
-            <div className={styles.pill}>Databases</div>
-            <div className={styles.pill}>Algorithms</div> */}
+            
         </div>
         <div className={styles.items}>
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
-          <SingleVideo />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
+          <SingleVideoSkeleton />
         </div>
       </div>
     </>

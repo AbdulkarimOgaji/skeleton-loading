@@ -1,7 +1,7 @@
 
 :root {
   --base-skeleton-color: #dedede;
-  --light-skeleton-color: #ffffee;
+  --light-skeleton-color: hsl(0, 0%, 97%);
 }
 
 
@@ -25,8 +25,9 @@
 .pill {
   background-color: #eee;
   border-radius: 1rem;
-  border: 1px solid #eee;
-  padding: 0.4rem 1rem;
+  border: 1px solid #ddd;
+  color: #777;
+  padding: 0.4rem 1.2rem;
 }
 
 .hamburger {
@@ -68,7 +69,7 @@
 
 .search {
   width: 80%;
-  height: 30px;
+  height: 40px;
   font-size: 1.2rem;
   color: #777;
   border: 1px solid var(--base-skeleton-color);
@@ -76,6 +77,10 @@
   padding-left: 0.5rem;
   font-weight: 100;
 }
+.search:focus ~ i {
+    border: 1px solid blue;
+    border-left-width: 0px;
+} 
 
 .search:focus {
   outline: none;
@@ -83,8 +88,11 @@
 }
 
 .searchIcon {
-  padding: 0.7;
-  background-color: yellow;
+  background-color: var(--light-skeleton-color);
+  padding: 0.7rem 1rem;
+  font-size: large;
+  border: 1px solid var(--base-skeleton-color);
+  border-left-width: 0;
 }
 .rightMenu {
   display: flex;
@@ -101,7 +109,10 @@
   margin-right: 2rem;
 }
 
-.rightMenu a div{
+.rightMenu a i{
+  font-size: large;
+  color: black;
+  font-weight: 100;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -115,7 +126,8 @@
 .content {
   display: grid;
   grid-column: 2 / span 1;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
+  background-color: var(--light-skeleton-color);
 }
 
 .items {
@@ -134,8 +146,13 @@
   height: 150px;
   width: 100%;
   margin-bottom: 1rem;
+  object-fit: contain;
 }
-
+h4 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
 .detailsContainer {
   display: flex;
   flex-direction: row;
@@ -146,6 +163,7 @@
   width: 40px;
   border-radius: 50%;
   margin-right: 20px;
+  object-fit: cover;
 }
 
 .details {
@@ -164,7 +182,7 @@
 }
 
 .skeleton {
-  animation: skeleton-animation 1s linear infinite alternate;
+  animation: skeleton-animation 500ms linear infinite alternate;
 }
 
 @keyframes skeleton-animation {

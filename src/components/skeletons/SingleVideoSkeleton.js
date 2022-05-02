@@ -1,6 +1,6 @@
 import styles from "../../styles/skeleton.module.css"
 
-export const SingleVideo = () => {
+export const SingleVideoSkeleton = () => {
   return (
     <div className={styles.item}>
       <div className={[styles.thumbnail, styles.skeleton].join(" ")}></div>
